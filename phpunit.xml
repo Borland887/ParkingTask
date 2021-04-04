@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<phpunit bootstrap="vendor/autoload.php"
+         beStrictAboutTestsThatDoNotTestAnything="true"
+         verbose="true"
+         stopOnFailure="false"
+         colors="true">
+
+    <php>
+        <ini name="error_reporting" value="-1"/>
+    </php>
+
+    <testsuites>
+        <testsuite name="Test suite">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+
+</phpunit>
